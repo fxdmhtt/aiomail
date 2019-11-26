@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import asyncio
+from easymail import *
 
 async def test():
     async with SMTP('smtp.example.com', 465, 'user@example.com', 'password') as smtp:
@@ -12,4 +13,4 @@ async def test():
         )
         await smtp.send(message)
 
-asyncio.get_event_loop.run_until_complete(test())
+asyncio.get_event_loop().run_until_complete(test())
