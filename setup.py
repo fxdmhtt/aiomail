@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="aiomail",
-    version="0.0.1",
+    version="0.0.2",
     author="fxdmhtt",
     author_email="yuanjunkang@gmail.com",
     description="easy and async e-mail package",
