@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import asyncio
-from easymail import *
+from aiomail import *
 
 async def test():
     async with SMTP('smtp.example.com', 465, 'user@example.com', 'password') as smtp:
