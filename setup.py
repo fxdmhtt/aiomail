@@ -13,6 +13,10 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/fxdmhtt/aiomail.git",
     packages=list(filter(lambda x: x.startswith('aiomail'), setuptools.find_packages())),
+    install_requires=[
+        'aiosmtplib',
+        'drymail',
+    ]
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
