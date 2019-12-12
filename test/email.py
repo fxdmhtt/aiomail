@@ -8,7 +8,7 @@ async def test():
         message = Message(
             sender=Sender('Sender', 'user@example.com'),
             receivers=Receiver('Receiver', 'user@example.com'),
-            text='test',
+            text='测试',
             subject='test',
         )
         await smtp.send(message)
